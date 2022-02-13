@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/xiaomi/mojito/proprietary/vendor/etc/K7A/para_ini_cal_w_d_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/K7A/para_ini_cal_w_d_0.bin \
     vendor/xiaomi/mojito/proprietary/vendor/etc/K7A/para_ini_cal_w_uw_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/K7A/para_ini_cal_w_uw_1.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/SVIConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SVIConfig.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Codec_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb \
