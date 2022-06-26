@@ -712,7 +712,7 @@ PRODUCT_PACKAGES += \
     libmibokeh_712 \
     libminkdescriptor \
     libminksocket \
-    libmpbase \
+    libmpbase_vendor \
     libnetmgr \
     libnetmgr_common \
     libnetmgr_nr_fusion \
