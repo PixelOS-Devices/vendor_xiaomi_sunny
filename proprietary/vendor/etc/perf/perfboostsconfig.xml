@@ -17,50 +17,22 @@
     <PerfBoost>
 
     <!--app lauch boost-->
+        <!-- SCHED DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED UPMIGRATE resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MAX_FREQ resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
 
         <!-- Type="1", main launch boost of 2sec -->
         <Config
             Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="msmsteppe"
-            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x41818000, 0xFF, 0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1,
-                       0x43000000, 0xFF, 0x43400000, 0xFFFF, 0x4281C000, 2000, 0x4280C000, 0" />
+            Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1516,
+                       0x40800100, 1516" />
        <Config
            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="sdmmagpie"
            Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1708,
                       0x40800100, 1497" />
-
-    <!--resume boost-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MAX_FREQ resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- POWER COLLAPSE resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCCBW resource opcode, value-->
-        <!-- L3 resource opcode, value-->
-        <!-- GPU DISABLE resource opcode, value-->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
-
-        <!-- Type="1", main launch boost of 2sec -->
-        <Config
-            Id="0x00001082" Type="1" Enable="true" Timeout="600" Target="msmsteppe"
-            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x41818000, 0xFF, 0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1,
-                       0x43000000, 0xFF, 0x43400000, 0xFFFF, 0x4281C000, 2000, 0x4280C000, 0" />
 
     <!--app lauch boost (disabling packing)-->
         <!-- POWER COLLAPSE resource opcode, value-->
@@ -185,13 +157,12 @@
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="1", Vertical Scroll boost -->
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="msmsteppe"
-            Resources="0x43010000, 0x26, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x42804000, 0, 0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 1017, 0x40800100, 1100, 0x40C00000, 2" />
 
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="sdmmagpie"
@@ -201,13 +172,12 @@
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="2", Horizontal Scroll boost -->
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="msmsteppe"
-            Resources="0x43010000, 0x26, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x42804000, 0, 0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 1017, 0x40800100, 1100, 0x40C00000, 2" />
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="sdmmagpie"
@@ -217,13 +187,12 @@
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
         <!-- SCHEDBOOST resource opcode, value-->
 
         <!-- Type="4", Pre-Fling boost -->
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="msmsteppe"
-            Resources="0x43010000, 0x26, 0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x42804000, 0, 0x40C00000, 2" />
+            Resources="0x43010000, 0x26, 0x40800000, 1017, 0x40800100, 1100, 0x40C00000, 2" />
 
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="sdmmagpie"
@@ -235,26 +204,14 @@
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBW_MIN_FREQ resource opcode, value-->
-        <!-- DISABLE_POWER_COLLAPSE resource opcode, value-->
         <!-- STORAGE CLK SCALING resource opcode, value-->
 
         <!-- Type="", MTP boost -->
 
         <Config
             Id="0x00001086" Enable="true" Target="msmsteppe"
-            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF, 0x41800000, 140, 0x40400000, 0x1, 0x42C10000, 0x1" />
-
-    <!--MTP boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-
-        <!-- Type="", MTP boost -->
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1516,
+                       0x40800100, 1516, 0x42C10000, 0x1" />
 
         <Config
             Id="0x00001086" Enable="true" Target="sdmmagpie"
@@ -305,7 +262,7 @@
 
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msmsteppe"
-            Resources="0x40800100, 0xFFF, 0x4280C000, 0" />
+            Resources="0x40800100, 1000, 0x4280C000, 596" />
 
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="sdmmagpie"
