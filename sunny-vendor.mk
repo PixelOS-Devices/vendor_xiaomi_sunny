@@ -430,6 +430,7 @@ PRODUCT_PACKAGES += \
     libqcreverb \
     libqcvirt \
     libshoebox \
+    android.hardware.camera.provider@2.4-legacy \
     com.qti.sensor.imx318 \
     com.qti.sensor.ofilm_gc02m1 \
     com.qti.sensor.ofilm_imx355 \
